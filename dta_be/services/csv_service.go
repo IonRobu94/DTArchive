@@ -16,6 +16,7 @@ func GetAllData() (bands []models.Band, albums []models.Album, reviews []models.
 	reviews = mapRecordsToReviews(loadDataFromCSV("reviews"))
 
 	return bands, albums, reviews
+
 }
 
 func mapRecordsToReviews(reviewsRecords [][]string) (reviews []models.Review) {
